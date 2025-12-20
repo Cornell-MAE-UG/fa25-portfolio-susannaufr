@@ -1,15 +1,16 @@
+---
 layout: project
 title: ENGRD 2210 Portfolio Assignment
 description: Class Assignment
 image: /assets/images/kohler-engine.jpg
 ---
 
-## **Collaborators:** ##
+**Collaborators:**
 _[Susanna Aufrichtig](mailto:sma283@cornell.edu), [Trevor Boshnack](mailto:tjb287@cornell.edu), [Camille Eckert](mailto:cse49@cornell.edu)_
 
 ## Assignment Background
 
-In ENGRD 2210 - Thermodynamics, we were tasked with selecting a real-world instance of a device or system that we had learned about in class, explaining how it works in detail, and discussing how its perforamnce would change under design or operating condition changes.
+In ENGRD 2210 - Thermodynamics, we were tasked with selecting a real-world instance of a device or system that we had learned about in class, explaining how it works in detail, and discussing how its performance would change under design or operating condition changes.
 
 ## System Background
 
@@ -21,9 +22,9 @@ Throughout this analysis, most data will be sourced from the manufacturer specif
 
 The analysis will consist of three main parts:
 
-**1. Calculating the efficiency of the engine, modeling it as a ideal air standard Otto Cycle**
+**1. Calculating the efficiency of the engine, modeling it as an ideal air standard Otto Cycle**
 
-**2. Calculate differences in ideal air-standard efficiency between the stock 14HP engine and the limitted 10HP configuration.**
+**2. Calculate differences in ideal air-standard efficiency between the stock 14HP engine and the limited 10HP configuration.**
 
 **3. Compare both of these ideal efficiencies to the efficiency of the engine in real operating conditions**
 
@@ -43,7 +44,7 @@ The real four stroke engine consists of 1. intake of fuel-air mixture 2. compres
   <img src="{{ '/assets/images/otto-cycle.jpg' | relative_url }}" alt="Centered Image" style="max-width:100%; height:auto;">
 </div>
 
-Meanwhile, the ideal air standard assumes a closed system where the steps are 1. adiabatic compression 2. constant pressure heat addition from a thermal reservoir 3. adiabatic expansion 4. constant pressure heat removal to a thermal reservoir.
+Meanwhile, the ideal air standard assumes a closed system where the steps are 1. adiabatic compression 2. constant volume heat addition from a thermal reservoir 3. adiabatic expansion 4. constant volume heat removal to a thermal reservoir.
 
 The efficiency of this ideal system is given by the equation:
 
@@ -85,7 +86,7 @@ Now, to calculate the work, we use the fact that the work of a cycle is power pe
 
 {% raw%}
 $$
-W_\text{cyc} = \frac{P}{\text{cycles/sec}} = \frac{\tau \frac{2 \pi \cdot RPM}{\text{60 sec}}}{\frac{RPM}{\text{2 cyles*60sec}}} = 4 \pi \tau = 4 \pi \cdot \text{30.78 Nm} = \text{386.79 J}
+W_\text{cyc} = \frac{P}{\text{cycles/sec}} = \frac{\tau \frac{2 \pi \cdot RPM}{\text{60 sec}}}{\frac{RPM}{\text{2 cycles*60sec}}} = 4 \pi \tau = 4 \pi \cdot \text{30.78 Nm} = \text{386.79 J}
 $$
 {% endraw %}
 
@@ -99,7 +100,7 @@ $$
 
 Now that we know the heat inputted into the engine, we can calculate new performance metrics for the restricted 10HP engine using measured values for torque and RPM.
 
-These values are obtained thanks to Trevor's work for Cornell Baja Racing last year. Trevor created a dynamometer setup which measured the power band RPM and maximum torque using a hall effect sensor, a load cell, and a water break.
+These values are obtained thanks to Trevor's work for Cornell Baja Racing last year. Trevor created a dynamometer setup which measured the power band RPM and maximum torque using a hall effect sensor, a load cell, and a water brake.
 
 <div style="text-align: center;">
   <img src="{{ '/assets/images/dyno-setup.png' | relative_url }}" alt="Centered Image" style="max-width:100%; height:auto;">
@@ -143,7 +144,7 @@ From the ideal gas law (PV=mRT), the mass of the air in the cylinder is proporti
 
 {% raw %}
 $$
-W_\text{cyc} \quad \alpha \quad  MEP \quad \alpha \quad  P \quad \alpha \quad  m_\text{air}
+W_\text{cyc} \propto MEP \propto P \propto m_\text{air}
 $$
 {% endraw %}
 
@@ -151,7 +152,7 @@ We can simplify the work of the cycle to maximum torque since they are proportio
 
 {% raw %}
 $$
-\tau \quad  \alpha \quad MEP \quad \alpha \quad m_\text{air}
+\tau \propto MEP \propto m_\text{air}
 $$
 {% endraw %}
 
@@ -159,7 +160,8 @@ This means that the ratios of torque and mass of air should be equivalent.
 
 {% raw %}
 $$
-\frac{\tau_\text{10}}{\tau_\text{14}} = \frac{m\text{10 air}}{m\text{14 air}} = 0.793
+\frac{\tau_{10}}{\tau_{14}} = \frac{m_{\text{air},10}}{m_{\text{air},14}} = 0.793
+
 $$
 {% endraw %}
 

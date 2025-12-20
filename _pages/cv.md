@@ -8,7 +8,7 @@ permalink: /cv/
 
 [Download my CV]({{ "/assets/assets/Susanna Aufrichtig Resume November 2025.pdf" | relative_url }}) in PDF format.
 
-**Email:** [sma283@cornell.edu](mailto:sma283@cornell.edu) | **Phone:** (650) 776-9286 | **LinkedIn:** https://linkedin.com/in/susannaufr
+**Email:** [sma283@cornell.edu](mailto:sma283@cornell.edu) | **Phone:** (650)776-9286 | **LinkedIn:** https://linkedin.com/in/susannaufr
 
 ---
 
