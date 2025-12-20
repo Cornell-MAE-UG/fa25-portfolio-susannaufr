@@ -14,6 +14,240 @@ _[Susanna Aufrichtig](mailto:sma283@cornell.edu), [Trevor Boshnack](mailto:tjb28
 
 ## Assignment Background
 
+In ENGRD 2210 – Thermodynamics, we were tasked with selecting a real-world instance of a device or system that we had learned about in class, explaining how it works in detail, and discussing how its performance would change under design or operating condition changes.
+
+## System Background
+
+For this assignment, we analyze and compare the thermal efficiency of the Rehlko Command PRO CH440 engine. This engine is the regulation engine mandated by SAE International for the collegiate Baja SAE Competition.
+
+The engine comes stock as a 14 HP, single-cylinder, four-stroke engine. However, competition rules mandate aftermarket modifications that limit the engine to 10 HP.
+
+Throughout this analysis, most data are sourced from the manufacturer specification sheet for the CH440 engine and the SAE International Baja SAE rulebook.
+
+The analysis consists of three main parts:
+
+1. **Calculating the efficiency of the engine by modeling it as an ideal air-standard Otto cycle**
+2. **Calculating differences in ideal air-standard efficiency between the stock 14 HP engine and the limited 10 HP configuration**
+3. **Comparing both ideal efficiencies to the efficiency of the engine under real operating conditions**
+
+## Ideal Air-Standard Otto Cycle
+
+First, we model the system as an ideal air-standard Otto cycle.
+
+Below is a comparison between an actual four-stroke engine and the ideal air-standard Otto cycle.
+
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/real-four-stroke.jpg' | relative_url }}" alt="Four-stroke engine cycle" style="max-width:100%; height:auto;">
+</div>
+
+The real four-stroke engine consists of:  
+(1) intake of a fuel–air mixture,  
+(2) compression of air,  
+(3) combustion,  
+(4) expansion of the air mixture (power stroke), and  
+(5) exhaust of air and combustion products.
+
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/otto-cycle.jpg' | relative_url }}" alt="Ideal air-standard Otto cycle" style="max-width:100%; height:auto;">
+</div>
+
+Meanwhile, the ideal air-standard cycle assumes a closed system with the following steps:  
+(1) adiabatic compression,  
+(2) constant-volume heat addition from a thermal reservoir,  
+(3) adiabatic expansion, and  
+(4) constant-volume heat removal to a thermal reservoir.
+
+The thermal efficiency of the ideal air-standard Otto cycle is given by
+
+$$
+\eta = 1 - \left(\frac{1}{r}\right)^{k-1}
+$$
+
+where \( r \) is the compression ratio (given by the manufacturer as \( r = 8.3 \)) and \( k \) is the specific heat ratio (typically \( k = 1.4 \) when modeling air as an ideal gas).
+
+Substituting values:
+
+$$
+\eta = 1 - \left(\frac{1}{8.3}\right)^{1.4 - 1}
+= 0.5711
+= 57.11\%
+$$
+
+This is the thermal efficiency for the stock 14 HP engine and lies within typical values for an ideal air-standard Otto cycle.
+
+## Engine Comparison
+
+### Work and Heat Input Variation
+
+For Baja SAE competition, the 14 HP engine uses an air-limiting gasket that reduces its output to 10 HP. Since thermal efficiency depends only on compression ratio, the ideal efficiency remains the same for both configurations. However, the work output and heat input per cycle change.
+
+From the CH440 datasheet, the maximum torque output of the stock engine is 22.7 ft-lb at 2800 RPM.
+
+Power output is given by
+
+$$
+P = \tau \omega = \tau \frac{2\pi \cdot \text{RPM}}{60}
+$$
+
+For a four-stroke engine, one cycle occurs every two revolutions. Thus, the work per cycle is
+
+$$
+W_{\text{cyc}}
+= \frac{P}{\text{cycles/sec}}
+= \frac{\tau \frac{2\pi \cdot \text{RPM}}{60}}{\frac{\text{RPM}}{2 \cdot 60}}
+= 4\pi\tau
+$$
+
+Using \( \tau = 30.78 \,\text{N·m} \):
+
+$$
+W_{\text{cyc}} = 4\pi(30.78) = 386.79 \,\text{J}
+$$
+
+The heat input per cycle is then
+
+$$
+Q_{\text{in}} = \frac{W_{\text{cyc}}}{\eta}
+= \frac{386.79}{0.5711}
+= 677.28 \,\text{J}
+$$
+
+### Restricted 10 HP Configuration
+
+Torque and RPM data for the restricted engine were obtained from Cornell Baja Racing dynamometer testing conducted by Trevor Boshnack using a hall-effect sensor, load cell, and water brake.
+
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/dyno-setup.png' | relative_url }}" alt="Dynamometer setup" style="max-width:100%; height:auto;">
+</div>
+
+The maximum torque was measured at approximately 18 ft-lb with a powerband near 3000 RPM.
+
+Using \( \tau = 24.405 \,\text{N·m} \):
+
+$$
+W_{\text{cyc}} = 4\pi(24.405) = 306.62 \,\text{J}
+$$
+
+and
+
+$$
+Q_{\text{in}} = \frac{306.62}{0.5711} = 536.89 \,\text{J}
+$$
+
+Thus, work per cycle decreases from 386.79 J to 306.62 J, and heat input per cycle decreases from 677.28 J to 536.89 J. This corresponds to reduced fuel intake and reduced torque output.
+
+### Air Intake Limitation
+
+The mean effective pressure (MEP) is defined as
+
+$$
+\text{MEP} = \frac{W_{\text{cyc}}}{V_d}
+$$
+
+From the ideal gas law \( PV = mRT \), the mass of air in the cylinder scales with pressure (assuming approximately constant temperature). Therefore,
+
+$$
+W_{\text{cyc}} \propto \text{MEP} \propto P \propto m_{\text{air}}
+$$
+
+Since torque is proportional to cycle work,
+
+$$
+\tau \propto m_{\text{air}}
+$$
+
+Thus,
+
+$$
+\frac{\tau_{10}}{\tau_{14}} = \frac{m_{\text{air},10}}{m_{\text{air},14}} = 0.793
+$$
+
+This implies the intake must be limited such that only 79.3 % of the original air mass enters the cylinder.
+
+## Real Efficiency
+
+Thermal efficiency for a real power cycle is defined as
+
+$$
+\eta = \frac{W_{\text{cyc}}}{Q_{\text{in}}}
+$$
+
+To compute heat input, we analyze fuel consumption. The lower heating value of unleaded gasoline is approximately 43.92 MJ/kg. Baja SAE rules mandate the use of a Pyrotect SFC100 fuel tank with dimensions 8.00 in diameter and 7.94 in height.
+
+The fuel volume is
+
+$$
+V = h r^2 = (7.94)(4)^2 = 399.1 \,\text{in}^3 = 0.00654 \,\text{m}^3
+$$
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="{{ '/assets/images/baja-fuel-tank.png' | relative_url }}" alt="Fuel tank photo" style="width:48%;">
+  <img src="{{ '/assets/images/baja-fuel-tank-drawing.jpg' | relative_url }}" alt="Fuel tank drawing" style="width:48%;">
+</div>
+
+The density of gasoline ranges from 710 to 770 kg/m\(^3\). Using the upper bound for a conservative estimate:
+
+$$
+m = \rho V = (770)(0.00654) = 5.0358 \,\text{kg}
+$$
+
+The total chemical energy available is
+
+$$
+Q = m \cdot \text{LHV} = (5.0358)(43.92) = 221.17 \,\text{MJ}
+$$
+
+During endurance competition, Cornell’s vehicle typically refuels after approximately 2.25 hours, having completed 41 laps of a 1.2-mile course. This corresponds to a distance of 79 300 m.
+
+Work done is approximated as
+
+$$
+W \approx F l
+$$
+
+Assuming a coefficient of friction of
+
+$$
+\mu = 0.4
+$$
+
+the total tractive force across four wheels is calculated as 889.952 N.
+
+Thus,
+
+$$
+W = (889.952)(79\,300.4256) = 70.57 \,\text{MJ}
+$$
+
+The real thermal efficiency is therefore
+
+$$
+\eta_{\text{real}} = \frac{70.57}{221.17} = 0.319 = 31.9\%
+$$
+
+This efficiency is significantly lower than the ideal air-standard value due to non-ideal combustion, mechanical losses, drivetrain inefficiencies, wheel slip, aerodynamic drag, and simplifying assumptions such as constant torque and purely forward motion.
+
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/tg21.jpg' | relative_url }}" alt="Cornell Baja vehicle" style="max-width:100%; height:auto;">
+</div>
+
+
+<!-- ---
+layout: project
+title: ENGRD 2210 Portfolio Assignment
+description: Class Assignment
+image: /assets/images/kohler-engine.jpg
+technologies:
+  - Rehlko CH440 datasheet
+  - SAE Baja Rules
+  - Cornell Baja dyno data
+---
+
+**Collaborators:**  
+_[Susanna Aufrichtig](mailto:sma283@cornell.edu), [Trevor Boshnack](mailto:tjb287@cornell.edu), [Camille Eckert](mailto:cse49@cornell.edu)_
+
+## Assignment Background
+
 In ENGRD 2210 - Thermodynamics, we were tasked with selecting a real-world instance of a device or system that we had learned about in class, explaining how it works in detail, and discussing how its performance would change under design or operating condition changes.
 
 ## System Background
@@ -231,3 +465,4 @@ As expected, the actual efficiency is much lower than the ideal-air standard eff
 <div style="text-align: center;">
   <img src="{{ '/assets/images/tg21.jpg' | relative_url }}" alt="Cornell Baja vehicle" style="max-width:100%; height:auto;">
 </div>
+ -->
