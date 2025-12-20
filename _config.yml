@@ -43,3 +43,4 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
 
+force_rebuild: true
