@@ -54,14 +54,14 @@ $$
 \eta = 1 - \left(\frac{1}{r}\right)^{k-1}
 $$
 
-where $r = 8.3$ is the compression ratio specified by the manufacturer, and $k = 1.4$ is the specific heat ratio for air modeled as an ideal gas.
+where r = 8.3 is the compression ratio specified by the manufacturer, and k = 1.4 is the specific heat ratio for air modeled as an ideal gas.
 
 Substituting values:
 
 $$
 \eta = 1 - \left(\frac{1}{8.3}\right)^{1.4-1}
 = 0.5711
-= 57.11\%.
+= 57.11\%
 $$
 
 This is the thermal efficiency for the stock 14HP engine, and it is within typical values for an ideal air-standard Otto cycle.
@@ -77,37 +77,37 @@ We start by calculating the cycle work and heat input for the 14HP configuration
 To calculate power output:
 
 $$
-P = \tau \omega = \tau\frac{2\pi \cdot \text{RPM}}{60\,\text{s}}
+P = \tau \omega = \tau\frac{2\pi \cdot \mathrm{RPM}}{60\,\mathrm{s}}
 $$
 
 For a four-stroke engine, there is one cycle every two revolutions, so:
 
 $$
-\text{cycles/sec} = \frac{\text{RPM}}{2\cdot 60}
+\mathrm{cycles/sec} = \frac{\mathrm{RPM}}{2\cdot 60}
 $$
 
 Thus, work per cycle is:
 
 $$
-W_{\text{cyc}}
-= \frac{P}{\text{cycles/sec}}
-= \frac{\tau \frac{2\pi \cdot \text{RPM}}{60\,\text{s}}}{\frac{\text{RPM}}{2\cdot 60\,\text{s}}}
+W_{\mathrm{cyc}}
+= \frac{P}{\mathrm{cycles/sec}}
+= \frac{\tau \frac{2\pi \cdot \mathrm{RPM}}{60\,\mathrm{s}}}{\frac{\mathrm{RPM}}{2\cdot 60\,\mathrm{s}}}
 = 4\pi\tau
 $$
 
 Converting torque to SI units:
 
 $$
-W_{\text{cyc}} = 4\pi \cdot 30.78\,\text{N}\cdot\text{m}
-= 386.79\,\text{J}
+W_{\mathrm{cyc}} = 4\pi \cdot 30.78\,\mathrm{N\cdot m}
+= 386.79\,\mathrm{J}
 $$
 
 Using the efficiency to back out heat input:
 
 $$
-Q_{\text{in}} = \frac{W_{\text{cyc}}}{\eta}
+Q_{\mathrm{in}} = \frac{W_{\mathrm{cyc}}}{\eta}
 = \frac{386.79}{0.5711}
-= 677.28\,\text{J}
+= 677.28\,\mathrm{J}
 $$
 
 Now we calculate performance metrics for the restricted 10HP engine using measured values for torque and RPM.
@@ -123,17 +123,17 @@ The maximum torque was determined to be around 18 ft-lb, and the power band was 
 Using the same expression:
 
 $$
-W_{\text{cyc}} = 4\pi\tau
-= 4\pi \cdot 24.405\,\text{N}\cdot\text{m}
-= 306.62\,\text{J}
+W_{\mathrm{cyc}} = 4\pi\tau
+= 4\pi \cdot 24.405\,\mathrm{N\cdot m}
+= 306.62\,\mathrm{J}
 $$
 
 And heat input:
 
 $$
-Q_{\text{in}} = \frac{W_{\text{cyc}}}{\eta}
+Q_{\mathrm{in}} = \frac{W_{\mathrm{cyc}}}{\eta}
 = \frac{306.62}{0.5711}
-= 536.89\,\text{J}
+= 536.89\,\mathrm{J}
 $$
 
 Work per cycle decreased from 386.79 J to 306.62 J, and heat input per cycle decreased from 677.28 J to 536.89 J. This implies lower fuel intake at peak conditions, but also a lower maximum torque output.
@@ -145,26 +145,26 @@ To reduce torque from 22.7 ft-lb to 18 ft-lb, engineers must limit air intake. T
 Mean effective pressure is defined as:
 
 $$
-\text{MEP} = \frac{W_{\text{cyc}}}{V_d}
+\mathrm{MEP} = \frac{W_{\mathrm{cyc}}}{V_d}
 $$
 
-From the ideal gas law ($PV=mRT$), the air mass in the cylinder scales with pressure as a rough proportionality argument. Therefore:
+From the ideal gas law, the air mass in the cylinder scales with pressure as a rough proportionality argument. Therefore:
 
 $$
-W_{\text{cyc}} \propto \text{MEP} \propto P \propto m_{\text{air}}
+W_{\mathrm{cyc}} \propto \mathrm{MEP} \propto P \propto m_{\mathrm{air}}
 $$
 
-Since $W_{\text{cyc}} \propto \tau$ for this comparison:
+Since work per cycle is proportional to torque for this comparison:
 
 $$
-\tau \propto \text{MEP} \propto m_{\text{air}}
+\tau \propto \mathrm{MEP} \propto m_{\mathrm{air}}
 $$
 
 So the ratio of torque should approximate the ratio of air mass:
 
 $$
 \frac{\tau_{10}}{\tau_{14}}
-= \frac{m_{\text{air},10}}{m_{\text{air},14}}
+= \frac{m_{\mathrm{air},10}}{m_{\mathrm{air},14}}
 = 0.793
 $$
 
@@ -177,13 +177,13 @@ Having analyzed the theoretical efficiency of the CH440 engine modified for use 
 Thermal efficiency is:
 
 $$
-\eta = \frac{W_{\text{cyc}}}{Q_{\text{in}}}
+\eta = \frac{W_{\mathrm{cyc}}}{Q_{\mathrm{in}}}
 $$
 
 To estimate heat input over a tank, we use the fuel lower heating value (LHV). For unleaded gasoline, a typical LHV is 12.2 kWh/kg (43.92 MJ/kg). Baja SAE rules require Pyrotect Part Number SFC100 as the fuel tank. From the tank drawing (8.00 in ⌀ × 7.94 in), approximating it as a cylinder:
 
 $$
-V = h r^2 = (7.94)(4)^2 = 399.1\,\text{in}^3 = 0.00654\,\text{m}^3
+V = h r^2 = (7.94)(4)^2 = 399.1\,\mathrm{in^3} = 0.00654\,\mathrm{m^3}
 $$
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -191,16 +191,16 @@ $$
   <img src="{{ '/assets/images/baja-fuel-tank-drawing.jpg' | relative_url }}" alt="Fuel tank drawing" style="width:48%;">
 </div>
 
-The density of unleaded gasoline is approximately 0.71 to 0.77 g/mL (710 to 770 kg/m$^3$). To be conservative, we use the highest value:
+The density of unleaded gasoline is approximately 0.71 to 0.77 g/mL (710 to 770 kg/m³). To be conservative, we use the highest value:
 
 $$
-m = \rho V = (770)(0.00654) = 5.0358\,\text{kg}
+m = \rho V = (770)(0.00654) = 5.0358\,\mathrm{kg}
 $$
 
 Total heat energy available from one full tank is:
 
 $$
-Q = m \cdot \text{LHV} = (5.0358)(43.92) = 221.17\,\text{MJ}
+Q = m \cdot \mathrm{LHV} = (5.0358)(43.92) = 221.17\,\mathrm{MJ}
 $$
 
 Next, we estimate how much work the vehicle produces on one full tank.
@@ -233,13 +233,13 @@ Multiplying the friction force by four wheels gives a total forward force of 889
 Thus:
 
 $$
-W = (889.952)(79{,}300.4256) = 70.57\,\text{MJ}
+W = (889.952)(79{,}300.4256) = 70.57\,\mathrm{MJ}
 $$
 
 Finally, the estimated real-life efficiency is:
 
 $$
-\eta_{\text{real}} = \frac{70.57}{221.17} = 0.319 = 31.9\%
+\eta_{\mathrm{real}} = \frac{70.57}{221.17} = 0.319 = 31.9\%
 $$
 
 As expected, the actual efficiency is much lower than the ideal air-standard efficiency. This is due to real-cycle effects (non-isentropic compression/expansion, irreversibilities, heat transfer, and combustion losses) and broader simplifying assumptions (forward-motion-only assumption, constant average force/torque assumption, and ignoring wheel slip and losses to drivetrain friction, rolling resistance, and aerodynamic drag).
