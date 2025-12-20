@@ -3,8 +3,6 @@ layout: default
 title: <Susanna Aufrichtig> - Portfolio
 permalink: /projects/
 ---
-<p>Projects found: {{ site.projects | size }}</p>
-
 <div class="gallery-container">
 <div class="project-gallery">
     {% for project in site.projects %}
