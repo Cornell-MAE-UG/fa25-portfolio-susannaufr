@@ -3,6 +3,10 @@ layout: project
 title: ENGRD 2210 Portfolio Assignment
 description: Class Assignment
 image: /assets/images/kohler-engine.jpg
+technologies:
+  - Rehlko CH440 datasheet
+  - SAE Baja Rules
+  - Cornell Baja dyno data
 ---
 
 **Collaborators:**  
