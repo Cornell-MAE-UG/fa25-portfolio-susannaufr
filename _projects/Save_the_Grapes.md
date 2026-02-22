@@ -1,6 +1,6 @@
 ---
 layout: project
-title: MAE 2250 ODP
+title: MAE 2250 Open Design Project
 description: Class Assignment
 image: /assets/images/SLF-Adult_on_grapes.jpg
 technologies:
@@ -54,5 +54,6 @@ technologies:
 
 ## Figure
 
-![Latern Fly Desnity on Grape Vines](assets/images/figure-2-avg-of-slf-adults-per-vine.png)
-
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/figure-2-avg-of-slf-adults-per-vine.png' | relative_url }}" alt="Lantern Fly Density on Grape Vines" style="max-width:100%; height:auto;">
+</div>
