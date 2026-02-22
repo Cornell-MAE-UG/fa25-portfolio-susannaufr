@@ -45,8 +45,6 @@ technologies:
 
 3. Are there any regulations you think we should be aware of? This provides us design constraints and keeps us aware of the environmental impact of our design.
 
-\newpage
-
 ## References
 
 - **Source 1** https://www.canr.msu.edu/resources/a-tale-of-two-invaders-tree-of-heaven-and-spotted-lanternfly
@@ -54,6 +52,6 @@ technologies:
 
 ## Figure
 
-<div style="text-align: center;">
+<div style="text-align: left;">
   <img src="{{ '/assets/images/figure-2-avg-of-slf-adults-per-vine.png' | relative_url }}" alt="Lantern Fly Density on Grape Vines" style="max-width:100%; height:auto;">
 </div>
