@@ -11,17 +11,21 @@ technologies:
 
 **Save the Grapes : Neil, Susanna, Jamie, Flavia, and Luca**
 
+
+
+
+
 **Design Documentation**
 
 **Design Intent:**
 
 Sketch:
 <div style="text-align: center;">
-  <img src="{{ '/assets/images/I2.png' | relative_url }}" style="max-width:100%; height:auto;">
+  <img src="{{ '/assets/images/I2.png' | relative_url }}" style="max-width:80%; height:auto;">
 </div>  
 CAD Assembly:
 <div style="text-align: center;">
-  <img src="{{ '/assets/images/I3.png' | relative_url }}" style="max-width:100%; height:auto;">
+  <img src="{{ '/assets/images/I3.png' | relative_url }}" style="max-width:80%; height:auto;">
 </div>
 
 **Assembly Process:**
@@ -101,8 +105,9 @@ Our testing process verified two different aspects of our prototype, both of whi
 |  |  |
 | Flow Rate Initial \- Final(Avg mL/min) | 3 |
 
+
 <div style="text-align: center;">
-  <img src="{{ '/assets/images/I4.png' | relative_url }}" alt="Image 1"style="max-width:80%; height:auto;">
+  <img src="{{ '/assets/images/I4.png' | relative_url }}" alt="Image 1" style="max-width:100%; height:auto;">
 </div>
 
 **Data Table 2** shows the results from the flow rate from the shower head design experiment. The flow rate for the shower head design was noticeably higher than the incision design (factor of 30x). This matched our expectations because we had a much larger cross sectional area in the shower head for the water to flow when compared with the incision design. **Image 2** shows the shower head design experiment. We propped the shower head at a height similar to where it would stand on the final product in order to gauge flow rate at a non-zero height above the pump. This is important because the higher the water has to be pumped, the slower the flow rate will be. 
@@ -120,8 +125,8 @@ Our testing process verified two different aspects of our prototype, both of whi
 | Flow Rate (mL/min) | 90 |
 
 <div style="text-align: center;">
-  <img src="{{ '/assets/images/I5.png' | relative_url }}" alt="Image 2"style="max-width:80%; height:auto;">
-</div> 
+  <img src="{{ '/assets/images/I5.png' | relative_url }}" alt="Image 2" style="max-width:100%; height:auto;">
+</div>
 
 
 **Success Criteria**
