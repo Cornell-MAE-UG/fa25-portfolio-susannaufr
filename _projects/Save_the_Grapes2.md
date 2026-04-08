@@ -1,8 +1,8 @@
 ---
 layout: project
-title: MAE 2250 Open Design Project Functional Prototype
+title: MAE 2250 ODP Functional Prototype
 description: Class Assignment
-image: /assets/images/SLF-Adult_on_grapes.jpg
+image: /assets/images/I1.png
 technologies:
   - Written Report
 ---
@@ -36,8 +36,14 @@ technologies:
 
 **Design Intent:**
 
-Sketch:  
+Sketch:
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/I2.png' | relative_url }}" style="max-width:100%; height:auto;">
+</div>  
 CAD Assembly:
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/I3.png' | relative_url }}" style="max-width:100%; height:auto;">
+</div>
 
 **Assembly Process:**
 
@@ -116,7 +122,11 @@ CAD Assembly:
 
                    **Data Table 1**
 
-                                                  **Image 1**  
+
+<div style="text-align: right;">
+  <img src="{{ '/assets/images/I4.png' | relative_url }}" style="max-width:50%; height:auto;">
+</div>
+
 **Data Table 1** shows our results from the incision flow. Based on **Data Table 1**, our average flow rate was 3 mL/min, confirming our assumption that incision flow would be very small. **Image 1** shows the water that was used in the tube and coming out of the tube, which confirmed a part of our success criteria. 
 
 | Time (min) | ml |
@@ -132,7 +142,9 @@ CAD Assembly:
 | Flow Rate (mL/min) | 90 |
 
                 **Data Table 2**  
-                                                                                      **Image 2**  
+                                                                              <div style="text-align: right;">
+  <img src="{{ '/assets/images/I5.png' | relative_url }}" style="max-width:50%; height:auto;">
+</div> 
 **Data Table 2** shows the results from the flow rate from the shower head design experiment. The flow rate for the shower head design was noticeably higher than the incision design (factor of 30x). This matched our expectations because we had a much larger cross sectional area in the shower head for the water to flow when compared with the incision design. **Image 2** shows the shower head design experiment. We propped the shower head at a height similar to where it would stand on the final product in order to gauge flow rate at a non-zero height above the pump. This is important because the higher the water has to be pumped, the slower the flow rate will be. 
 
 **Success Criteria**

@@ -1,6 +1,6 @@
 ---
 layout: project
-title: MAE 2250 Open Design Project Client Outline
+title: MAE 2250 ODP Client Outline
 description: Class Assignment
 image: /assets/images/SLF-Adult_on_grapes.jpg
 technologies:
