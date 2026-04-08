@@ -54,7 +54,7 @@ footer {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 900px;
 }
 
 .project-item img {
@@ -124,6 +124,12 @@ footer {
     float: right;
     margin-right: 0;
   }
+}
+
+.project-item h3, .gallery-item p {
+  white-space: normal;      /* allows text to break onto multiple lines */
+  word-wrap: break-word;    /* breaks long words if needed */
+  overflow: visible;        /* ensures nothing is cut off */
 }
 
 .profile-image, .project-image {
