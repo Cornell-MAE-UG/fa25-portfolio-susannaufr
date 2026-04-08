@@ -11,10 +11,8 @@ technologies:
 
 **Save the Grapes : Neil, Susanna, Jamie, Flavia, and Luca**
 
-
-
-
-
+---
+---
 **Design Documentation**
 
 **Design Intent:**
