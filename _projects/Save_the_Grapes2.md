@@ -7,9 +7,11 @@ technologies:
   - Written Report
 ---
 
-# ODP 4: Functioning Prototype**
+# ODP 4: Functioning Prototype
 
 **Save the Grapes : Neil, Susanna, Jamie, Flavia, and Luca**
+
+---
 
 **Design Documentation**
 
