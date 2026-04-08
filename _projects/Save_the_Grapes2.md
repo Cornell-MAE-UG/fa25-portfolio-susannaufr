@@ -13,27 +13,6 @@ technologies:
 
 **Design Documentation**
 
-**BOM for Functional Prototype:**
-
-| Description | Vendor | McMaster Code | Quantity | Unit of measurement | Total Cost |
-| ----- | ----- | ----- | :---: | :---: | :---: |
-| Soft Masterkleer PVC Tubing for Air and Water | McMaster Carr | 5233K113 | 25 | feet | $11.50 |
-| Surface-Mount Hinge with Holes | McMaster Carr | 1603A2 | 4 | Pack of 1 Each | $5.32 |
-| Push to Connect Fitting | McMaster Carr | 3619N12 | 6 | Pack of 1 Each | $15.66 |
-| White Plastic Corner Bracket | McMaster Carr | 13135A62 | 20 | Pack of 1 Each | $2.60 |
-| Kamoer NKP low flow peristaltic pump | Amazon |  | 1 | Pack of 1 | $9.98 |
-| M3 x 0.5 Black-Oxide Alloy Steel Socket Head Screw 14mm Long  | McMaster Carr | 91290A119  | 1 | Pack of 1 | $15.30 |
-| Zinc-Plated Steel Hex Nut  Medium-Strength, ISO Class 8, M3 x 0.5 mm Thread Size | McMaster Carr | 90591A250 | 1 | Pack of 1 | $3.06 |
-| 0.25 in Wood Panels (4in x 10in) | Taylor Design Studio |  | 4 |  |  |
-| 0.25 in Wood Panels (4in x 8iin) | Taylor Design Studio |  | 1 |  |  |
-| 3D Printed Top Bracket | RPL 3D Print |  | 2 |  |  |
-| Sprayer Head for Vinegar | RPL 3D Print |  | 1 |  |  |
-| Outer Front Panel for Door | RPL 3D Print |  | 1 |  |  |
-| Open Flap for Door | RPL 3D Print |  | 1 |  |  |
-| 3D Printed Handle for Door | RPL 3D Print |  | 1 |  |  |
-| 12V Power Supply | Taylor Design Studio |  | 1 |  |  |
-| **Total Cost** |  |  |  |  | $63.42 |
-
 **Design Intent:**
 
 Sketch:
@@ -108,7 +87,9 @@ CAD Assembly:
 
 **Design Test**
 
-	Our testing process verified two different aspects of our prototype, both of which involved the pumping of water from the base to the top of the product. Water was used as the test fluid due to its accessibility and similar qualities to our final fluid we will use. Our first test examined fluid flow from the pump out of the tubing that wrapped around the PVC pipe. We used an Xacto knife to make small incisions in the tubing to enable water to flow out of it. These incisions will closely, if not exactly, reflect how we will create holes in our final product. We measured incision flow in time intervals of 2.5 mins due to our assumption that the flow rate would be very small, which would make it difficult to measure the flow rate on a seconds based time interval. Also, we chose minutes as our time scale because we intend to have the fluid in the final product last several days before being refilled. We were unable to measure on a time scale of hours because our lab time did not allow for it. We used a measuring device graduated in 10 mL increments when measuring flow rates.
+Our testing process verified two different aspects of our prototype, both of which involved the pumping of water from the base to the top of the product. Water was used as the test fluid due to its accessibility and similar qualities to our final fluid we will use. Our first test examined fluid flow from the pump out of the tubing that wrapped around the PVC pipe. We used an Xacto knife to make small incisions in the tubing to enable water to flow out of it. These incisions will closely, if not exactly, reflect how we will create holes in our final product. We measured incision flow in time intervals of 2.5 mins due to our assumption that the flow rate would be very small, which would make it difficult to measure the flow rate on a seconds based time interval. Also, we chose minutes as our time scale because we intend to have the fluid in the final product last several days before being refilled. We were unable to measure on a time scale of hours because our lab time did not allow for it. We used a measuring device graduated in 10 mL increments when measuring flow rates.
+
+**Data Table 1** shows our results from the incision flow. Based on **Data Table 1**, our average flow rate was 3 mL/min, confirming our assumption that incision flow would be very small. **Image 1** shows the water that was used in the tube and coming out of the tube, which confirmed a part of our success criteria. 
 
 | Incision Flow |  |
 | ----- | ----- |
@@ -120,14 +101,11 @@ CAD Assembly:
 |  |  |
 | Flow Rate Initial \- Final(Avg mL/min) | 3 |
 
-                   **Data Table 1**
-
-
-<div style="text-align: right;">
-  <img src="{{ '/assets/images/I4.png' | relative_url }}" style="max-width:50%; height:auto;">
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/I4.png' | relative_url }}" alt="Image 1"style="max-width:80%; height:auto;">
 </div>
 
-**Data Table 1** shows our results from the incision flow. Based on **Data Table 1**, our average flow rate was 3 mL/min, confirming our assumption that incision flow would be very small. **Image 1** shows the water that was used in the tube and coming out of the tube, which confirmed a part of our success criteria. 
+**Data Table 2** shows the results from the flow rate from the shower head design experiment. The flow rate for the shower head design was noticeably higher than the incision design (factor of 30x). This matched our expectations because we had a much larger cross sectional area in the shower head for the water to flow when compared with the incision design. **Image 2** shows the shower head design experiment. We propped the shower head at a height similar to where it would stand on the final product in order to gauge flow rate at a non-zero height above the pump. This is important because the higher the water has to be pumped, the slower the flow rate will be. 
 
 | Time (min) | ml |
 | ----- | ----- |
@@ -141,11 +119,10 @@ CAD Assembly:
 |  |  |
 | Flow Rate (mL/min) | 90 |
 
-                **Data Table 2**  
-                                                                              <div style="text-align: right;">
-  <img src="{{ '/assets/images/I5.png' | relative_url }}" style="max-width:50%; height:auto;">
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/I5.png' | relative_url }}" alt="Image 2"style="max-width:80%; height:auto;">
 </div> 
-**Data Table 2** shows the results from the flow rate from the shower head design experiment. The flow rate for the shower head design was noticeably higher than the incision design (factor of 30x). This matched our expectations because we had a much larger cross sectional area in the shower head for the water to flow when compared with the incision design. **Image 2** shows the shower head design experiment. We propped the shower head at a height similar to where it would stand on the final product in order to gauge flow rate at a non-zero height above the pump. This is important because the higher the water has to be pumped, the slower the flow rate will be. 
+
 
 **Success Criteria**
 
