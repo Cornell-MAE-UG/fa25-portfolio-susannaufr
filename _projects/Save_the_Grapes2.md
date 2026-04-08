@@ -1,6 +1,6 @@
 ---
 layout: project
-title: MAE 2250 ODP Functional Prototype
+title: MAE2250 Functional Prototype
 description: Class Assignment
 image: /assets/images/I1.png
 technologies:
