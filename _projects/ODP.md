@@ -6,9 +6,21 @@ image: /assets/images/SLF-Adult_on_grapes.jpg
 technologies:
   - Written Report
 ---
-# Client Outline
+# MAE2250 Open Design Project
+---
 
-# Grapevine Redirection and Attraction for Pest Elimination
+## Table of Contents
+
+- [Client Outline](#client-outline)
+- [Functioning Prototype](#functioning-prototype)
+- [Client Report](#client-report)
+
+---
+
+# Client Outline
+<a id="client-outline"></a>
+
+## Grapevine Redirection and Attraction for Pest Elimination
 
 **Team:** Save the Grapes
 **Client(s):** Cornell CALS Extension / E\&J Gallo Winery / National Grape  
@@ -57,9 +69,10 @@ technologies:
   <img src="{{ '/assets/images/figure-2-avg-of-slf-adults-per-vine.png' | relative_url }}" alt="Lantern Fly Density on Grape Vines" style="max-width:100%; height:auto;">
 </div>
 
-# Functioning Prototype
+---
 
-**Save the Grapes : Neil, Susanna, Jamie, Flavia, and Luca**
+# Functioning Prototype
+<a id="functioning-prototype"></a>
 
 ---
 
@@ -205,4 +218,92 @@ Looking at the next step in our timeline which is refining some of our tests and
 **Demonstration Day Criteria** 
 
 When it comes to demonstration day criteria, one of the most relevant is the success of the vinegar sprayer spraying radius being greater than 0.25m. This is because it is a clear visual for those in the audience that we were able to get a key mechanical system working but also that we would be able to kill lantern flies in a wide area which are on our system.
+
+---
+
+# Client Report 
+<a id="client-report"></a>
+
+
+**Context and Problem Statement**  
+Spotted Lanternflies (SLFs), an invasive species rapidly spreading across the eastern United States, pose a growing threat to agricultural systems.2 SLFs land on grape vines and feed on plant sugars, contaminating harvests, reducing yields, and worsening grapes.2 SFLs also excrete honeydew, promoting growth of sooty mold that inhibits photosynthesis.5 These effects can cost the wine industry billions of dollars in lost yields.3 On-vine SLF removal was shown to be impractical because the insects are numerous, and aggressive removal methods could damage the vines. Post harvest removal proved to be too risky considering the high rate of contamination. So instead, we wondered if there was a way to attract SFLs away from the vines completely.
+
+**Final Prototype and Application**  
+To lure SLFs away from grapevines, our system utilizes a sugary attractant designed to mimic the sap of the Tree of Heaven, a preferred host plant5. Once lured to the device, SLFs are then exterminated using targeted vinegar1 spraying through side-mounted sprayers.
+
+**1\. Sap Attraction:** We pump a sugar solution that mimics the viscosity of natural sap through a central pole, creating an attractive feeding source.  
+**2\. Targeted Elimination:** Once the insects gather, we spray them with vinegar using servo-actuated sprayers.
+
+Key features:
+
+1) Adjustable spray angles for coverage optimization  
+2) Compact footprint for vineyard integration  
+3) Arduino-controlled automation  
+4) Low-toxicity vinegar-based treatment
+
+**A vineyard simply places the device, turns it on, and it runs autonomously with minimal maintenance.**
+
+**Assembly**  
+The system is designed so the box exterior can be rapidly assembled or disassembled if need be. Each panel contains a lip to maintain box geometry. Screws are then attached throughout each panel for rigidity. The lid of the box consists of two peices which are loosely pressed to fit to the top of the box, giving quick access to the interior electronics and fluid reservoirs for maintenance. One of the panels contains a mounting profile for the electrical board which is held on with four screws on the interior of the box. Electrical components are wired together using jumper wires and Wago connectors which can be plugged directly into the arduino and allow for easily connecting components in parallel. A 3D printed linkage allows servo motors to actuate the sprayer heads. A 3D printed bar is screwed into the servo horn which pulls the actuator forwards and backwards. Everything is then rigidly attached together using screws and mounted on the top box panel.
+
+**Testing Details and Results**
+
+1. **Sap Drainage Test:** To test to longevity of our sap reservoir, we conducted a drainage test to determine how long the system could realistically last in the field without being refilled
+
+**Procedure:**
+
+1) Mix 200 g sucrose \+ 300 g water to mimic Tree of Heaven sap viscosity (\~5 mPa·s) 4  
+2) Pump solution for 10 min, recording water level every 2.5 min
+
+**Results:**
+
+* Drainage rate: 0.5 mL/min  (6mL/day) → 1000mL reservoirs must be refilled every \~167 da**2\.   Spray Angle & Coverage:** To confirm that our sprayers could cover the majority of the central pole in vinegar, we tested sprayer angles to find max coverage.
+
+**Procedure:**
+
+1) Cover central pole in paper, set sprayers to a specific angle, perform a spraying cycle, measure area of paper that is damp
+
+**Results:**
+
+* The optimal working angle of the sprayers was found to be 65 degrees, achieving 86% spray coverage. This allows for most coverage of the landing area of the SLF on our system
+
+**3\. Battery Life**  
+To evaluate VineGuard’s power constraints, we calculated energy consumption.
+
+**Results:**
+
+* VineGuard can operate for approximately 8.2 days on a 10,000mAh battery charge. The system’s modular battery design enables users to balance cost against serviceability depending on deployment needs.
+
+**Conclusion and Recommendation**
+
+Based on our test results, Vineguard demonstrates a strong potential as a feasible and effective solution for protection against SFLs. Our testing showed that the system can deliver the attractant at controlled flow rates, achieve ideal spray coverage under specific angles, and operate for around 167 days completely autonomously based on power supply. Additionally, the manufacturing and assembly process required minimal setup, and the system showed low maintenance demands once built. Given this performance we would recommend development of our prototype to move forward with field testing as the next step. It will be important to test the attractant that will be used, along with ideal placement that will bring in the most insects at a time. Also, taking tourism into account is important so the aesthetics of the design would also need to be modified to camouflage it into the vineyard as much as possible. Overall, Vinegaurd offers a feasible low-toxicity, low-intervention solution  for mitigating SLF damage in vineyards through a bio-inspired decoy system. This prototype has the potential to not only save vineyards millions in yields but also to provide an eco-friendly, passive, low maintenance solution compared to past pest control methods.  
+**BOM for Final Prototype:**
+
+| Description | Vendor | McMaster Code | Quantity | Unit of measurement | Total Cost |
+| ----- | ----- | ----- | :---: | :---: | :---: |
+| Soft Masterkleer PVC Tubing for Air and Water | McMaster Carr | 5233K113 | 1 | 25 feet | $11.50 |
+| Push to Connect Fitting | McMaster Carr | 3619N12 | 6 | Pack of 1 Each | $15.66 |
+| Kamoer NKP low flow peristaltic pump | Amazon |  | 1 | Pack of 1 | $9.98 |
+| M3 x 0.5 Black-Oxide Alloy Steel Socket Head Screw 14mm Long  | McMaster Carr | 91290A119  | 1 | Pack of 1 | $15.30 |
+| 12V Power Supply | Taylor Design Studio |  | 1 |  | \~ |
+|  Metal Servo Arms Horn Aluminum | Amazon |  | 1 | Pack of 6 | $6.99 |
+| Arduino Uno REV3 | Amazon |  | 1 | Pack of 1 | $27.60 |
+| L298N Motor Driver | Amazon |  | 1 | Pack of 2 | $6.98 |
+| LM2596 DC to DC Buck Converter | Amazon |  | 1 | Pack of 5 | $7.99 |
+| Wago 221-415 Lever-Nuts  | Amazon |  | 1 | Pack of 10 | $9.85 |
+| Round Rocker Switches | Amazon |  | 1 | Pack of 5 | $6.39 |
+| Spray Bottle Long-Reach, 1 Gallon Capacity | McMaster Carr | 9864T16 | 2 | Pack of 1 | $8.80 |
+| Routing Clamp 304 Stainless Steel, 2 Mounting Points, 15/16" ID | McMaster Carr | 8874T43 | 2 | Pack of 1 | $7.42 |
+| Semi-Clear HDPE Plastic Bottle 32 FL. oz./1000 ml Capacity, 1-1/2" Mouth OD | McMaster Carr | 3681T77 | 2 | Pack of 1 | $7.46 |
+| 2000 Series 5-Turn, Dual Mode Servo | Taylor Design Studio |  | 1 |  | \~ |
+| Black-Oxide Alloy Steel Socket Head Screw M3 x 0.5 mm Thread Size, 40 mm Long | McMaster Carr |  | 1 | Pack of 25 | $4.86 |
+| Zinc-Plated  Steel Hex Nut Medium-Strength, ISO Class 8, M3 x 0.5mm Thread Size  | McMaster Carr | 90591A250 | 1 | Pack of 100 | $3.06 |
+| **Total Cost** |  |  |  |  | $149.84 |
+
+**Works Cited**  
+\[1\] Amdro, “How to control and kill spotted lanternflies.” Available: Amdro website.  
+\[2\] CNBC, “Spotted lanternflies are feasting on U.S. grapevines and putting vineyards at risk,” Oct. 13, 2022\.  
+\[3\] Cornell Chronicle, “Spotted lanternflies could cost NYS grape industry millions,” Jan. 27, 2025\.  
+\[4\] BioNumbers (BNID 108683), “Viscosity of the sap (typically \~5× water),” Harvard Medical School.  
+\[5\] Penn State Extension, “Spotted lanternflies and beekeeping,” Oct. 5, 2025\.
 
