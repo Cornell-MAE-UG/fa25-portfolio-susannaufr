@@ -242,9 +242,26 @@ Key features:
 4) Low-toxicity vinegar-based treatment
 
 **A vineyard simply places the device, turns it on, and it runs autonomously with minimal maintenance.**
-
+<div style="text-align: left;">
+  <img src="{{ '/assets/images/pA' | relative_url }}"  style="max-width:60%; height:auto;">
+</div>
+<div style="text-align: left;">
+  <img src="{{ '/assets/images/pB' | relative_url }}"  style="max-width:60%; height:auto;">
+</div>
 **Assembly**  
 The system is designed so the box exterior can be rapidly assembled or disassembled if need be. Each panel contains a lip to maintain box geometry. Screws are then attached throughout each panel for rigidity. The lid of the box consists of two peices which are loosely pressed to fit to the top of the box, giving quick access to the interior electronics and fluid reservoirs for maintenance. One of the panels contains a mounting profile for the electrical board which is held on with four screws on the interior of the box. Electrical components are wired together using jumper wires and Wago connectors which can be plugged directly into the arduino and allow for easily connecting components in parallel. A 3D printed linkage allows servo motors to actuate the sprayer heads. A 3D printed bar is screwed into the servo horn which pulls the actuator forwards and backwards. Everything is then rigidly attached together using screws and mounted on the top box panel.
+<div style="text-align: left;">
+  <img src="{{ '/assets/images/pC' | relative_url }}"  style="max-width:60%; height:auto;">
+</div>
+<div style="text-align: left;">
+  <img src="{{ '/assets/images/pD' | relative_url }}"  style="max-width:60%; height:auto;">
+</div>
+<div style="text-align: left;">
+  <img src="{{ '/assets/images/pE' | relative_url }}"  style="max-width:60%; height:auto;">
+</div>
+<div style="text-align: left;">
+  <img src="{{ '/assets/images/pF' | relative_url }}"  style="max-width:60%; height:auto;">
+</div>
 
 **Testing Details and Results**
 
@@ -256,6 +273,10 @@ The system is designed so the box exterior can be rapidly assembled or disassemb
 2) Pump solution for 10 min, recording water level every 2.5 min
 
 **Results:**
+
+<div style="text-align: middle;">
+  <img src="{{ '/assets/images/pG' | relative_url }}"  style="max-width:60%; height:auto;">
+</div>
 
 * Drainage rate: 0.5 mL/min  (6mL/day) → 1000mL reservoirs must be refilled every \~167 da**2\.   Spray Angle & Coverage:** To confirm that our sprayers could cover the majority of the central pole in vinegar, we tested sprayer angles to find max coverage.
 
