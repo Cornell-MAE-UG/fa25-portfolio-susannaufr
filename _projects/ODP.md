@@ -274,10 +274,6 @@ The system is designed so the box exterior can be rapidly assembled or disassemb
 
 **Results:**
 
-<div style="text-align: center;">
-  <img src="{{ '/assets/images/pG.png' | relative_url }}"  style="max-width:60%; height:auto;">
-</div>
-
 * Drainage rate: 0.5 mL/min  (6mL/day) → 1000mL reservoirs must be refilled every \~167 da**2\.   Spray Angle & Coverage:** To confirm that our sprayers could cover the majority of the central pole in vinegar, we tested sprayer angles to find max coverage.
 
 **Procedure:**
@@ -294,6 +290,10 @@ To evaluate VineGuard’s power constraints, we calculated energy consumption.
 **Results:**
 
 * VineGuard can operate for approximately 8.2 days on a 10,000mAh battery charge. The system’s modular battery design enables users to balance cost against serviceability depending on deployment needs.
+
+<div style="text-align: center;">
+  <img src="{{ '/assets/images/pG.png' | relative_url }}"  style="max-width:60%; height:auto;">
+</div>
 
 **Conclusion and Recommendation**
 
